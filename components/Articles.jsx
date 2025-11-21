@@ -10,7 +10,7 @@ export default function Articles() {
           </h1>
           <article
             className={`flex flex-col items-start gap-10
-            md:flex-row md:justify-between
+            md:flex-row lg:justify-between px-2
             `}
           >
             <p
