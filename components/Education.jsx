@@ -7,33 +7,25 @@ export default function Education() {
         `}
     >
       <h1 className="title">التعليم</h1>
-      <div
-        className={`
-          flex flex-col bg-gray-100/90
-        `}
-      >
-        <span className={`main-font-size font-bold`}>ماجستير محاسبة مالية</span>
-        <span className={`sub-font-size`}>جامعة الملك سعود</span>
-        <span className={`sub-font-size`}>
-          التقدير: إمتياز مع مرتبة الشرف الأولى
+
+      <div className="flex flex-col bg-gray-100/90">
+        <span className="main-font-size font-bold">
+          ماجستير الإعلام الرقمي
         </span>
-        <span className={`sub-font-size`}>سنة التخرج: 2017</span>
+        <span className="sub-font-size">جامعة الملك سعود</span>
+        <span className="sub-font-size">التقدير: امتياز</span>
+        <span className="sub-font-size">سنة التخرج: 2017</span>
       </div>
+
       {/* -------------------------------------- */}
-      <div
-        className={`
-        flex flex-col bg-gray-100/90
-        `}
-      >
-        <span className={`main-font-size font-bold`}>
-          {" "}
-          بكالوريوس محاسبة 
+
+      <div className="flex flex-col bg-gray-100/90">
+        <span className="main-font-size font-bold">
+          بكالوريوس لغة عربية وإعلام
         </span>
-        <span className={`sub-font-size`}>جامعة الملك سعود</span>
-        <span className={`sub-font-size`}>
-          التقدير: إمتياز مع مرتبة الشرف الأولى
-        </span>
-        <span className={`sub-font-size`}>سنة التخرج: 2013</span>
+        <span className="sub-font-size">جامعة الملك سعود</span>
+        <span className="sub-font-size">التقدير: جيد جدًا</span>
+        <span className="sub-font-size">سنة التخرج: 2013</span>
       </div>
     </div>
   );

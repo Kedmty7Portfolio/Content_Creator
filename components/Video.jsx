@@ -4,7 +4,7 @@ export function Video() {
       {[...Array(4)].map((_, i) => (
         <video
           key={i}
-          className="w-full max-w-xs md:max-w-sm lg:max-w-md h-[220px] md:h-[300px]"
+          className="w-full lg:w-[400px] h-[290px] md:h-[450px] lg:h-[300px]"
           controls
           preload="none"
         >
