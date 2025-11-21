@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Share_Tech,Changa } from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 import Parent from "@/components/Parent";
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <Parent/>
+         <SpeedInsights />
       </body>
     </html>
   );
