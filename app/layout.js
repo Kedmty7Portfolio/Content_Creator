@@ -3,6 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 import Parent from "@/components/Parent";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         {/* <Parent/> */}
          <SpeedInsights />
         {children}
+         <Footer/>
       </body>
     </html>
   );
