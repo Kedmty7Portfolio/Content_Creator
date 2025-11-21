@@ -1,54 +1,69 @@
 import Image from "next/image";
+
 export default function About() {
   return (
-    <div
-      className={`w-full  my-4 rounded-lg p-(--main-padding)
-      bg-[url('/bg1.jpg')] bg-cover bg-no-repeat
-     relative z-10
-    `}
-    >
+    <div className="w-full my-4 rounded-lg relative lg:h-[400px]">
+      
+      {/* ---------------- Background Section ---------------- */}
+      <div className="relative w-full h-[400px] overflow-hidden rounded-md">
+        <Image
+          src="/bg.png"
+          alt="background"
+          fill
+          className="object-cover"
+        />
+
+        {/* Mask */}
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      {/* ---------------- Foreground Content ---------------- */}
       <div
-        className={`bgimg absolute left-0 top-0 w-full h-full bg-black/10  
-        z-0
-        `}
-      ></div>
-      <div
-        className={`
-    flex flex-col md:flex-row-reverse justify-end items-center gap-10
-    `}
+        className="
+          absolute inset-0
+          flex flex-col md:flex-row-reverse
+          justify-end items-center gap-10
+          px-6
+        "
       >
+        {/* Profile Image */}
         <div
-          className={`img w-[250px] h-[250px] md:w-[300px] md:h-[300px] relative overflow-hidden 
-             rounded-full   flex justify-center items-center shrink-0
-            bg-white border-4 border-black/55 
-             `}
+          className="
+            w-[250px] h-[250px] 
+            md:w-[300px] md:h-[300px] 
+            relative rounded-full overflow-hidden
+            flex justify-center items-center
+            bg-white border-4 border-black/55 shrink-0
+          "
         >
           <Image
             src="/saud.png"
             alt="my pic"
             width={300}
             height={300}
-            className="mt-12"
+            className="object-cover mt-12"
           />
         </div>
 
-        <div className="summry">
-          <h1 className="font-bold text-2xl">
+        {/* Summary Text */}
+        <div className="summry text-white">
+          <h1 className="font-bold text-2xl mb-3">
             عبدالله القحطاني{" "}
-            <span className="text-[#feb429] leading-16">كاتب محتوى متمرس</span>{" "}
+            <span className="text-[#feb429]">كاتب محتوى</span>
           </h1>
+
           <p
-            className={`w-full lg:w-[600px] 
-            text-lg leading-10
-            `}
+            className="
+              w-full lg:w-[500px] xl:w-[600px] 2xl:w-[700px]
+              text-lg leading-10
+            "
           >
-            {" "}
-            ، شغوف بابتكار نصوص جذابة وفعّالة تتواصل مباشرة مع الجمهور. أمتلك
+            شغوف بابتكار نصوص جذابة وفعّالة تتواصل مباشرة مع الجمهور. أمتلك
             خبرة واسعة في كتابة المقالات، المحتوى التسويقي، ووسائل التواصل
             الاجتماعي، مع القدرة على تبسيط الأفكار المعقدة وتحويلها إلى محتوى
-            سلس وواضح. أحب تطوير استراتيجيات المحتوى التي تزيد من التفاعل وتُعزز
-            العلامة التجارية، وأسعى دائمًا لتقديم محتوى إبداعي يجمع بين الدقة
-            والجاذبية.
+            سلس وواضح. أحب تطوير استراتيجيات المحتوى التي تزيد من التفاعل
+            وتُعزز العلامة التجارية، وأسعى دائمًا لتقديم محتوى إبداعي يجمع
+            بين الدقة والجاذبية.
           </p>
         </div>
       </div>
