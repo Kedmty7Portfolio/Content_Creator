@@ -1,5 +1,8 @@
 export function Video() {
   return (
+    <div className="mt-10">
+
+    <h1 className="text-3xl font-bold text-center mb-5">محتوى البودكاست</h1>
     <div className="my-10 p-5 flex justify-center items-center gap-10 flex-wrap">
       {[...Array(4)].map((_, i) => (
         <video
@@ -13,6 +16,7 @@ export function Video() {
           Your browser does not support the video tag.
         </video>
       ))}
+    </div>
     </div>
   );
 }
