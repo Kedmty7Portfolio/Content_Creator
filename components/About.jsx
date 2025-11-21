@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     
-      <div className="relative my-5 py-5 w-full h-[850px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden">
+      <div className="relative my-5 py-5 w-full h-[830px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden">
 
         {/* ---------------- Background ---------------- */}
         <Image
