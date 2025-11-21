@@ -25,8 +25,8 @@ const changa = Changa({
 });
 
 export const metadata = {
-  title: "Personal Portfolio",
-  description: "Personal Client Portfolio",
+  title: "Content Creator Portfolio",
+  description: "Personal Content Creator Portfolio",
   icons: [{ rel: "icon", url: "icon.ico" }],
 };
 
@@ -36,10 +36,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${shareTech.className} ${changa.className}`}
       >
-        {children}
         <Header/>
-        <Parent/>
+        {/* <Parent/> */}
          <SpeedInsights />
+        {children}
       </body>
     </html>
   );

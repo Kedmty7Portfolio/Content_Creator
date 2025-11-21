@@ -19,12 +19,12 @@ export default function Header() {
             alt="my pic"
             width={70}
             height={70}
-            className="scale-200"
+            className=""
           />
         </div>
       </Link>
       <div className={`links flex items-center gap-5 text-lg  md:text-xl`}>
-        <Link href={``}>عني</Link>
+        <Link href={`/Aboutinfo`}>عني</Link>
         <Link href={``}>سابقة أعمالي</Link>
       </div>
     </div>
