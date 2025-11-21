@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     
-      <div className="relative my-5 py-5 w-full h-[800px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden">
+      <div className="relative my-5 py-5 w-full h-[850px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden">
 
         {/* ---------------- Background ---------------- */}
         <Image
@@ -46,7 +46,7 @@ export default function About() {
 
           {/* Summary */}
           <div className="summry text-white">
-            <h1 className="font-bold text-2xl mb-3">
+            <h1 className="font-bold text-[22px] mb-3">
               عبدالله القحطاني{" "}
               <span className="text-[#feb429]">كاتب محتوى</span>
             </h1>
