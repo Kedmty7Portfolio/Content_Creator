@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Share_Tech,Changa } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 import Parent from "@/components/Parent";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${shareTech.className} ${changa.className}`}
       >
         {children}
+        <Header/>
         <Parent/>
          <SpeedInsights />
       </body>
