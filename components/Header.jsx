@@ -19,7 +19,7 @@ export default function Header() {
             alt="my pic"
             width={70}
             height={70}
-            className=""
+            className="scale-200"
           />
         </div>
       </Link>
