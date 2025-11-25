@@ -9,7 +9,7 @@ export default function Footer() {
       <span className={`text-xl block mb-5`}>تواصل معي</span>
       <div className={`contact flex flex-col gap-2 md:flex-row md:justify-center md:items-center md:gap-6`}>
         <a
-          href="https://wa.me/966501508065"
+          href="https://wa.me/96650150000"
           target="_blank"
           className={`flex items-center gap-2`}
          
